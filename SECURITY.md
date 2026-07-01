@@ -33,4 +33,4 @@ timeline.
 ## Please do not
 
 - Open public issues containing exploit details before a fix is available.
-- Test against tokens or accounts you don't own.
+- Test against devices you don't own.
