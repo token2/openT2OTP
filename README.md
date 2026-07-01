@@ -9,7 +9,7 @@ TOTP hardware token: a small device with a segment LCD that shows a rotating
 6-digit code, keeps time for 5–8 years on a coin cell (depending on model), and is provisioned over NFC using the
 documented Token2 programmable-token wire protocol. Any host that implements the
 protocol can provision it; the open [`token2_config.py`](https://github.com/token2/token2_config.py)
-tool is one such host.
+tool is one such host. The same functionality also exists as a part of the  [`keyroost`](https://github.com/framefilter/keyroost) project 
 
 This is the **actual firmware core our original programmable TOTP tokens run
 on** — not a reconstruction. We've decided to open-source it because there is
