@@ -19,7 +19,7 @@ firmware, and cases where the firmware could leak the seed.
 
 ## Reporting
 
-Please report suspected security issues **privately** first, rather than opening a
+Please report suspected security issues [`privately`](https://www.token2.swiss/site/page/informing-us-about-security-issues) first, rather than opening a
 public issue:
 
 - Use GitHub's private vulnerability reporting ("Report a vulnerability" under the
