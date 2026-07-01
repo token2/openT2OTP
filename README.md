@@ -120,6 +120,14 @@ do. If small changes are needed to run on a particular off-the-shelf part, **we'
 update the design — and community updates, or even just reports of such
 incompatibilities, are very welcome.**
 
+## Board layout
+
+![openT2OTP suggested component placement](hardware/kicad/placement.png)
+
+*Suggested component placement — an illustration, not a manufactured PCB or a
+routed board. See [`hardware/kicad/README.md`](hardware/kicad/README.md) for
+what this is and isn't.*
+
 ## License
 
 - **Firmware:** MIT — see [`LICENSE`](LICENSE).
