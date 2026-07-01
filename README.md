@@ -10,6 +10,7 @@ TOTP hardware token: a small device with a segment LCD that shows a rotating
 documented Token2 programmable-token wire protocol. Any host that implements the
 protocol can provision it; the open [`token2_config.py`](https://github.com/token2/token2_config.py)
 tool is one such host. The same functionality also exists as a part of the  [`keyroost`](https://github.com/framefilter/keyroost) project 
+and Token2 NFC Burner apps for Android and iOS (to be open sourced soon): https://www.token2.swiss/site/page/mobile-nfc-burner-apps-for-the-second-generation-single-profile-token2-programmable-tokens
 
 This is the **actual firmware core our original programmable TOTP tokens run
 on** — not a reconstruction. We've decided to open-source it because there is
@@ -100,7 +101,7 @@ You need only a C compiler (`gcc`/`clang`) and `make`.
    covers the LCD, wiring, BOM, and PCB design.
 3. **Port to your target** — implement the HAL in
    [`docs/PORTING.md`](docs/PORTING.md) (RTC, NVM, RNG, LCD segment map).
-4. **Provision a token** — use [`token2_config.py`](https://github.com/token2/token2_config.py)
+4. **Provision a token** — use [`token2_config.py`](https://github.com/token2/token2_config.py) 
    over NFC/PC-SC to write a seed and configuration.
 
 ## On sourcing components
