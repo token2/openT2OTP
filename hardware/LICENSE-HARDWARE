@@ -1,0 +1,20 @@
+openT2OTP hardware documentation and design
+
+Copyright (c) 2020-2026 Token2 Sarl
+
+The hardware documentation and design in this repository (the wiring, BOM, PCB
+floorplan, antenna notes, and casing guidance under `hardware/`) are licensed
+under the CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P v2).
+
+You may copy, modify, and distribute these design materials, provided you retain
+this notice. The design is provided "as is", without warranty of any kind; see
+the full licence text for details.
+
+Full licence text: https://cern-ohl.web.cern.ch/  (CERN-OHL-P v2)
+
+SPDX-License-Identifier: CERN-OHL-P-2.0
+
+Note on industrial design: this permissive licence covers the functional design.
+The specific enclosure look-and-feel is deliberately our own — if you reuse this
+work, create your own housing appearance rather than copying an existing
+product's trade dress. See hardware/CASING.md.

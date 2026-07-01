@@ -1,0 +1,24 @@
+# build artifacts
+firmware/test_fw
+firmware/kat_fw
+firmware/totp_fw
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+
+# editor / OS
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# KiCad backups
+*-bak
+*.kicad_pcb-bak
+fp-info-cache
+
+# python
+__pycache__/
+*.pyc

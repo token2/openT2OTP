@@ -1,0 +1,16 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="openT2OTP icon">
+  <title>openT2OTP icon</title>
+  <rect width="120" height="120" rx="26" fill="#0B7285"/>
+  <circle cx="60" cy="20" r="6" fill="none" stroke="#7FE3D6" stroke-width="3.5"/>
+  <circle cx="60" cy="66" r="38" fill="none" stroke="#0E5E6B" stroke-width="7"/>
+  <circle cx="60" cy="66" r="38" fill="none" stroke="#7FE3D6" stroke-width="7"
+          stroke-linecap="round" stroke-dasharray="150 89" transform="rotate(-90 60 66)"/>
+  <circle cx="60" cy="66" r="27" fill="#08525E"/>
+  <!-- T2 monogram -->
+  <g fill="#7FE3D6">
+    <rect x="43" y="52" width="30" height="7" rx="1.6"/>
+    <rect x="54.5" y="52" width="7" height="29" rx="1.6"/>
+    <text x="71" y="83" font-family="'DejaVu Sans','Helvetica Neue',Arial,sans-serif"
+          font-size="22" font-weight="700" fill="#7FE3D6">2</text>
+  </g>
+</svg>

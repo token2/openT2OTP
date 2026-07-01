@@ -1,0 +1,44 @@
+name: firmware-ci
+
+on:
+  push:
+    paths:
+      - 'firmware/**'
+      - '.github/workflows/ci.yml'
+  pull_request:
+    paths:
+      - 'firmware/**'
+      - '.github/workflows/ci.yml'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install toolchain
+        run: sudo apt-get update && sudo apt-get install -y gcc make
+
+      - name: Protocol session test
+        working-directory: firmware
+        run: make test
+
+      - name: SM4 known-answer test
+        working-directory: firmware
+        run: make kat
+
+      - name: TOTP RFC 6238 test vectors
+        working-directory: firmware
+        run: make totp
+
+      - name: Seed framing round-trip
+        working-directory: firmware
+        run: make seed
+
+      - name: Segment-LCD driver
+        working-directory: firmware
+        run: make slcd
+
+      - name: Full provisioning flow
+        working-directory: firmware
+        run: make provision

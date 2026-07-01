@@ -1,0 +1,33 @@
+<svg width="520" height="140" viewBox="0 0 520 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="openT2OTP logo">
+  <title>openT2OTP</title>
+  <!-- mark: a token as the 'o'. Countdown ring (TOTP 30s step) wraps a T2
+       monogram (Token2), in a keyfob silhouette. -->
+  <g transform="translate(20,20)">
+    <circle cx="50" cy="8" r="5.5" fill="none" stroke="#0B7285" stroke-width="3"/>
+    <circle cx="50" cy="58" r="40" fill="none" stroke="#D3E8EC" stroke-width="7"/>
+    <circle cx="50" cy="58" r="40" fill="none" stroke="#0B7285" stroke-width="7"
+            stroke-linecap="round" stroke-dasharray="156 96"
+            transform="rotate(-90 50 58)"/>
+    <circle cx="50" cy="58" r="30" fill="#0B7285"/>
+    <!-- T2 monogram -->
+    <g fill="#7FE3D6">
+      <rect x="33" y="44" width="27" height="6.5" rx="1.5"/>
+      <rect x="43.25" y="44" width="6.5" height="27" rx="1.5"/>
+      <text x="59" y="74" font-family="'DejaVu Sans','Helvetica Neue',Arial,sans-serif"
+            font-size="21" font-weight="700" fill="#7FE3D6">2</text>
+    </g>
+  </g>
+  <!-- wordmark -->
+  <g transform="translate(140,0)">
+    <text x="0" y="86"
+          font-family="'DejaVu Sans Mono','SF Mono',Menlo,Consolas,monospace"
+          font-size="50" letter-spacing="-1">
+      <tspan fill="#495057" font-weight="400">open</tspan><tspan fill="#0B7285" font-weight="700">T2OTP</tspan>
+    </text>
+    <text x="2" y="112"
+          font-family="'DejaVu Sans','Helvetica Neue',Arial,sans-serif"
+          font-size="12.5" letter-spacing="3" fill="#868E96">
+      TOKEN2 · OPEN-SOURCE HARDWARE TOTP
+    </text>
+  </g>
+</svg>
