@@ -27,6 +27,9 @@ a wrong customer key (the handshake now simply requires re-challenging rather th
 locking; see [`docs/SECURITY.md`](docs/SECURITY.md)). What's published here is
 **exactly the core our current hardware runs** — same protocol, same crypto, same
 behavior.
+Initially, the tokens were only allowing programming the seed, as we used a regular RTC.
+But later on,when the RTC with the possibility to adjust its counter became possible to source,
+we managed to make programmable tokens with [`time sync`](TIMESYNC.md).
 
 **About the name.** "openT2OTP" is the name we chose *for the open-source release*.
 Internally, this firmware was developed and shipped under a different codename; we
