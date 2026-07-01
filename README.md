@@ -150,3 +150,18 @@ protocol and a reference host are published openly at
 `PROTOCOL.md`); that tool is one conformant host. The core here was finalized in
 2020, last changed in 2025 (wrong-key lockout removed), and is what our current
 hardware runs.
+
+## P.S. Also available: programmable cards
+
+The same openT2OTP firmware core also runs on our programmable TOTP **cards** — the
+credit-card-format version of the token. From the code's point of view they are
+identical: the same provisioning protocol, the same seed handling, the same one-time-code
+generation. If you have read and trust the firmware here, it is the very same firmware on
+the card.
+
+The *hardware*, however, is a different story. A card packs the electronics into
+ISO-7810 thickness using laminated inner layers, thermally bonded assembly, and custom
+ultra-thin flat batteries — construction that requires specialised industrial equipment.
+Unlike the keyfob reference in this repository, a card is **not something you can assemble
+yourself**, and we don't publish it as a DIY design because it genuinely isn't one. The
+open source here is the firmware; the card hardware is ours to manufacture.
