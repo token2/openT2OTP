@@ -12,10 +12,10 @@ protocol can provision it; the open [`token2_config.py`](https://github.com/toke
 tool is one such host. The same functionality also exists as a part of the  [`keyroost`](https://github.com/framefilter/keyroost) project 
 and Token2 [`NFC Burner apps`](https://www.token2.swiss/site/page/mobile-nfc-burner-apps-for-the-second-generation-single-profile-token2-programmable-tokens) for Android and iOS (to be open sourced soon).
 
-This is the **actual firmware core our original programmable TOTP tokens run
-on** — not a reconstruction. We've decided to open-source it because there is
-nothing to hide in how a TOTP token works: the security of TOTP rests on the
-secret seed, not on obscurity of the device, so opening the design costs nothing
+This is mainly the **actual firmware core our original programmable TOTP tokens run
+on**, and only partially a reconstruction (the original code was less elegant, we tidyed it up a bit). 
+We've decided to open-source it because there is nothing to hide in how a TOTP token works: 
+the security of TOTP rests on the secret seed, not on obscurity of the device, so opening the design costs nothing
 and lets anyone audit, learn from, or build on it.
 
 ### A little history
